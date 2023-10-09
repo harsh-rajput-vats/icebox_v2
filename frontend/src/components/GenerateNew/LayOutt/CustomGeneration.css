@@ -1,0 +1,32 @@
+.bigbox {
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    background-color: #DED6FF;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* width: calc(100%-4px); */
+    /* background-color: */
+    /* border: 2px solid #402199; */
+    border-bottom: 2px solid #40219980;
+    border-left: 2px solid #40219980;
+    border-right: 2px solid #40219980;
+    border-radius: 15px 15px 20px 20px;
+}
+
+.head {
+    height: 46px;
+    width: calc(100% - 8px);
+    background: linear-gradient(to top, #DED6FF, #40219960);
+        border: 2px solid #40219980;
+        border-radius: 50px 50px 200px 200px;
+}
+
+.body {
+    height: calc(100% - 50px);
+    /* position: absolute; */
+    width: 100%;
+    /* background-color: beige; */
+}

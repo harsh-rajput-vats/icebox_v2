@@ -1,0 +1,33 @@
+
+.gradient-button {
+  position: relative;
+  width: 11vw;
+  height: 7vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  background: linear-gradient(60deg, #ec74e7, #8468f5);
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  right:15px;
+}
+
+.gradient-button:hover {
+  box-shadow: 0 6px 10px 4px rgba(33, 150, 243, 0.3);
+}

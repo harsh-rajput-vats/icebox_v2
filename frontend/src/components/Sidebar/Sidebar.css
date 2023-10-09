@@ -1,0 +1,62 @@
+/* Sidebar.css */
+ul li {
+    text-align: center;
+}
+.sidebar {
+    width: 55px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    bottom:0;
+    position: fixed;
+    background-color: #DED6FF;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top-list */
+.top-list {
+    list-style-type: none;
+    top: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app-logo {
+    top: 0
+}
+
+/* Middle-list */
+.middle-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middle-list li {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/* Bottom-list */
+.bottom-list {
+    margin-top: auto;
+    list-style-type: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Style for active link */
+.middle-list a.active,
+.bottom-list a.active {
+    font-weight: bold;
+}

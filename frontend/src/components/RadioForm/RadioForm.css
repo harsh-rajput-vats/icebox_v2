@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: 'Inter';
+    src: url("../../assets/Fonts/Inter-Regular.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../assets/Fonts//Montserrat-Regular.ttf") format('ttf');
+}
+form {
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-weight: 350;
+    font-size: small;
+    justify-content: center;
+}
+
+input[type="radio"] {
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: center;
+}
+
+input[type="radio"]:checked+label {
+    color: #007bff;
+    font-weight: bold;
+}

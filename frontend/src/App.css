@@ -1,0 +1,19 @@
+.App {
+  height: 100%;
+  width: 100%;
+}
+body,h1,p {
+  margin: 0;
+  padding: 0;
+}
+.main_content{
+    position: relative;
+    width: calc(100vw - 55px);
+    height: calc(100vh - 55px);
+    left: 55px;
+    top: 55px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: #F4EBEF;
+}

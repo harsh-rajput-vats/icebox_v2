@@ -1,0 +1,69 @@
+
+.child {
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  color: #8069ed;
+}
+.icon-button:hover {
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  background-color: #d6cbe8;
+  color: #402199;
+  box-shadow: 0 0 20px rgba(128, 105, 237, 0.8),
+    0 0 30px rgba(128, 105, 237, 0.6);
+}
+.icon-button.light-mode {
+  text-align: center;
+  height: 36px;
+  width: 36px;
+  color: #8069ed;
+}
+
+.icon-button.dark-mode {
+  text-align: center;
+  height: 36px;
+  width: 36px;
+  color: #8069ed;
+
+}
+
+.icon-button.light-mode:hover {
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  background-color: #d6cbe8;
+  color: #8069ed;
+  box-shadow: 0 0 20px rgba(128, 105, 237, 0.8),
+    0 0 30px rgba(128, 105, 237, 0.6);
+}
+
+.icon-button.dark-mode:hover {
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  background-color: #322052;
+  color: #8069ed;
+  box-shadow: 0 0 20px rgba(128, 105, 237, 0.8),
+    0 0 30px rgba(128, 105, 237, 0.6);
+}
+
+.icon {
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}

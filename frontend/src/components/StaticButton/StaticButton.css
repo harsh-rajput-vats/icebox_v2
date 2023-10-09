@@ -1,0 +1,35 @@
+.child {
+    text-align: center;
+    width: 24px;
+    height: 24px;
+}
+
+.static-button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    color: black;
+}
+
+.static-button:hover {
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    /* background-color: #d6cbe8; */
+    /* color: white; */
+    /* box-shadow: 0 0 20px rgba(128, 105, 237, 0.8),
+        0 0 30px rgba(128, 105, 237, 0.6); */
+}
+
+.icon {
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
