@@ -1,5 +1,5 @@
 import React from "react";
-import "./GenerateData.css";
+import "./agGenerateData.css";
 import StaticButton from "../../StaticButton/StaticButton";
 import SettingsIcon from "../../../assets/Icons/settings.svg";
 import RadioForm from "../../RadioForm/RadioForm";

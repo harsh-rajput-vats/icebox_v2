@@ -1,5 +1,5 @@
 import React from "react";
-import "./PreviewPane.css";
+import "./agPreviewPane.css";
 
 function PreviewPane() {
   const button = () => {
