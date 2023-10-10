@@ -6,6 +6,8 @@ import Navbar from "../src/components/NavBar/Navbar";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Generate from "./pages/Generate/Generate";
 import AfterGen from "./pages/AfterGen/aftergen";
+import Datasets from "./pages/Datasets/Datasets"
+
 function App() {
 
   return (
@@ -25,12 +27,13 @@ function App() {
               <Route path="/" element={<LandingPage />} />
               <Route path="/generate/" element={<Generate />} />
               <Route path="/aftergen/" element={<AfterGen />} />
+              <Route path="/datasets/" element={<Datasets />} />
             </Routes>
           </div>
         </div>
       </div>
     </Router>
   );
-  
+
 }
 export default App;

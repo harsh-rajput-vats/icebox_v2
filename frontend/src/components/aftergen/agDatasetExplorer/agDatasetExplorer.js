@@ -25,7 +25,7 @@ function DatasetExplorer({
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ number: 6 }), // Send the 'count' in the request body
+            body: JSON.stringify({ number: 6 }),
           }
         );
         const apiData = await response.json();
@@ -51,12 +51,11 @@ function DatasetExplorer({
         <div className="agTree">
           <Box
             sx={{
+              width: '250px',
               minHeight: 180,
               flexGrow: 1,
               overflow: "auto", // Enable vertical and/or horizontal scrollbars as needed
-              maxHeight: "300px", // Set a fixed height for the box
-              // border: "1px solid #ccc", // Optional: Add a border for styling
-              // padding: "16px", // Optional: Add padding for content inside the box
+              maxHeight: "300px",
             }}
           >
             <TreeView

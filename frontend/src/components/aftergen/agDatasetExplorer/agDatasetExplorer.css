@@ -15,6 +15,11 @@
     border-right: 2px solid #40219980;
     border-radius: 15px 15px 20px 20px;
 }
+.agTree{
+    margin-top: 52px;
+    /* margin-right: 150px; */
+    margin-left: 10px;
+}
 .headDE{
     height: 46px;
     width: calc(100% - 8px);
