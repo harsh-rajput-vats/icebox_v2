@@ -1,7 +1,9 @@
 import React from "react";
 import "./agPreviewPane.css";
 
-function PreviewPane() {
+function PreviewPane({
+  isImg,value
+}) {
   const button = () => {
     alert("YO");
   };
@@ -15,7 +17,13 @@ function PreviewPane() {
           </li>
         </ul>
       </div>
-      <div className="bodyPP"></div>
+      <div className="bodyPP">
+        {isImg === true?
+        <span>{value}</span>
+        :
+      <img src={value} />
+        }
+      </div>
     </div>
   );
 }

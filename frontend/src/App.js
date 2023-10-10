@@ -4,9 +4,10 @@ import "./App.css";
 import Sidebar from "../src/components/Sidebar/Sidebar";
 import Navbar from "../src/components/NavBar/Navbar";
 import LandingPage from "./pages/LandingPage/LandingPage";
-import Generate from "./pages/Generate/Generate"
-import AfterGen from "./pages/AfterGen/aftergen"
+import Generate from "./pages/Generate/Generate";
+import AfterGen from "./pages/AfterGen/aftergen";
 function App() {
+
   return (
     <Router>
       <div className="viewport">
@@ -30,6 +31,6 @@ function App() {
       </div>
     </Router>
   );
+  
 }
-
 export default App;
