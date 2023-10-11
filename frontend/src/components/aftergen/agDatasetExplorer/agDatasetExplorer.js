@@ -25,7 +25,7 @@ function DatasetExplorer({
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ number: 6 }),
+            body: JSON.stringify({ number: 12 }),
           }
         );
         const apiData = await response.json();
@@ -47,11 +47,12 @@ function DatasetExplorer({
             <h3 id="boxTitleDE">Dataset Explorer</h3>
           </li>
         </ul>
-
+      </div>
+      <div className="bodyDE">
         <div className="agTree">
           <Box
             sx={{
-              width: '250px',
+              width: "350px",
               minHeight: 180,
               flexGrow: 1,
               overflow: "auto", // Enable vertical and/or horizontal scrollbars as needed
@@ -169,7 +170,6 @@ function DatasetExplorer({
           </Box>
         </div>
       </div>
-      <div className="bodyDE"></div>
     </div>
   );
 }

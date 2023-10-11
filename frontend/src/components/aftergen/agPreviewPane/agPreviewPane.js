@@ -7,7 +7,6 @@ function PreviewPane({
   const button = () => {
     alert("YO");
   };
-
   return (
     <div className="bigboxPP">
       <div className="headPP">
@@ -18,11 +17,9 @@ function PreviewPane({
         </ul>
       </div>
       <div className="bodyPP">
-        {isImg === true?
-        <span>{value}</span>
-        :
-      <img src={value} />
-        }
+        <div className="value-container">
+          {isImg === true ? <span>{value}</span> : <img src={value}/>}
+        </div>
       </div>
     </div>
   );
