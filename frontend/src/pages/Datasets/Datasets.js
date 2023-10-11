@@ -3,7 +3,7 @@ import "./Datasets.css";
 import CustomGeneration from "../../components/GenerateNew/CustomGeneration/CustomGeneration";
 import DatasetExplorer from "../../components/GenerateNew/DatasetExplorer/DatasetExplorer";
 import PreviewPane from "../../components/GenerateNew/PreviewPane/PreviewPane";
-import Datalist from "../../components/Datasets/Datalist/Datalist";
+import Datalist from "../../components/Datasets/TL_Datalist/Datalist";
 
 function MainContent() {
   const proceedClick = () => {
