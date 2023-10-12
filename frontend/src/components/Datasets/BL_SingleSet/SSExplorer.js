@@ -7,7 +7,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { TreeView } from "@mui/x-tree-view/TreeView";
 import { TreeItem } from "@mui/x-tree-view/TreeItem";
 
-function SSExplorer({setIsImg, setValue }) {
+function SSExplorer({setIsImg, setValue,profiles}) {
   const button = () => {
     alert("YO");
   };
@@ -61,7 +61,7 @@ function SSExplorer({setIsImg, setValue }) {
               defaultCollapseIcon={<ExpandMoreIcon />}
               defaultExpandIcon={<ChevronRightIcon />}
             >
-              {data.map((uidData) => (
+              {profiles.map((uidData) => (
                 <TreeItem nodeId={`1${uidData.id}`} label={uidData.uid}>
                   <TreeItem
                     nodeId={`2${uidData.id}`}

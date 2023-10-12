@@ -2,7 +2,7 @@ import React from "react";
 import "./Graph.css";
 import RadarChart from "../../../assets/Images/RadarChart.png";
 
-function Graph() {
+function Graph({profilename, count}) {
   
   return (
     <div className="bigboxCG">
@@ -16,7 +16,9 @@ function Graph() {
       <div className="bodyCG">
         <div className="data-details">
           <h3>Name of Dataset: </h3>
+          <h4>{profilename}</h4>
           <h3>Number of IDs: </h3>
+          <h4>{count}</h4>
         </div>
         <div>
         <img className="chart-img" src={RadarChart} alt="Chart image" />

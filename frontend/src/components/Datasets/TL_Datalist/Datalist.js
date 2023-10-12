@@ -11,7 +11,9 @@ import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import SettingsIcon from "@mui/icons-material/Settings";
 import IconButton from "@mui/material/IconButton";
 
-function Datalist() {
+function Datalist({
+  profiles,profilename,setCount
+}) {
   const [datasets, setDatasets] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -56,10 +58,29 @@ function Datalist() {
         break;
     }
   };
+  async function fetchProfiles(id) {
+    try {
+      const response = await fetch(`http://127.0.0.1:8000/api/profileset/${id}/`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+    // Send the 'count' in the request body
+      });
+      const apiData = await response.json();
+      profiles(apiData.profiles)
+      setCount((apiData.profiles.length))
+      // setDatasets([{ id: 1 }, { id: 2 }]);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      setDatasets([]);
+    }
+  }
 
   const handleFolderClick = (folderId) => {
-    // Implement the action when a folder is clicked
-    console.log(`Clicked on folder ${folderId}`);
+    fetchProfiles(folderId.id);
+    profilename(folderId.name);
+
   };
 
   return (
@@ -98,7 +119,7 @@ function Datalist() {
           <IconButton
             aria-label="Folder"
             key={dataset.id}
-            onClick={() => handleFolderClick(dataset.id)}
+            onClick={() => handleFolderClick(dataset)}
           >
             <div className="dataset-icon-name">
             <FolderIcon style={{ fontSize: 48 }} />
