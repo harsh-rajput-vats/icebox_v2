@@ -8,7 +8,7 @@ import { TreeView } from "@mui/x-tree-view/TreeView";
 import { TreeItem } from "@mui/x-tree-view/TreeItem";
 
 function DatasetExplorer({
- isImg,setIsImg,setValue 
+ setIsImg,setValue 
 }) {
   const button = () => {
     alert("YO");

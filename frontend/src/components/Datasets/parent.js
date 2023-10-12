@@ -1,5 +1,5 @@
-import React from "react";
-import "./Parent.css";
+import React, {useState} from "react";
+import "./parent.css";
 import Datalist from "./TL_Datalist/Datalist";
 import Graph from "./TR_DetailsGraph/Graph";
 import SSExplorer from "./BL_SingleSet/SSExplorer";
@@ -10,6 +10,10 @@ function Parent() {
     alert("Lets get started!");
     // More functionality logic later
   };
+
+  const [isImg, setIsImg] = useState(false);
+  const [value, setValue] = useState(null);
+
   return (
     <div className="container">
       <div className="top">
@@ -22,10 +26,10 @@ function Parent() {
       </div>
       <div className="bot">
         <div className="bot-left">
-          <SSExplorer />
+          <SSExplorer setIsImg={setIsImg} setValue={setValue}/>
         </div>
         <div className="bot-right">
-          <BR_PP />
+          <BR_PP isImg={isImg} value={value}/>
         </div>
       </div>
     </div>

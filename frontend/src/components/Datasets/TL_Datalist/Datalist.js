@@ -94,14 +94,18 @@ function Datalist() {
 
       <div className="folder-buttons">
         {datasets.map((dataset) => (
+          
           <IconButton
             aria-label="Folder"
             key={dataset.id}
             onClick={() => handleFolderClick(dataset.id)}
           >
+            <div className="dataset-icon-name">
             <FolderIcon style={{ fontSize: 48 }} />
             {dataset.name}
+            </div>
           </IconButton>
+          
           
         ))}
       </div>
@@ -110,88 +114,3 @@ function Datalist() {
 }
 
 export default Datalist;
-// import React , {useEffect,useState}from "react";
-// import "./Datalist.css";
-// import FolderIcon from "@mui/icons-material/Folder";
-// import IconButton from "@mui/material/IconButton";
-
-// function Datalist(props) {
-
-//   const handleFolderClick = () => {
-//     alert("oops");
-//   }
-
-//   const [data, setData] = useState([]);
-//   useEffect(() => {
-//     async function fetchProfileSets() {
-//       try {
-//         const response = await fetch(
-//           "http://127.0.0.1:8000/api/create-profilesets/",
-//           {
-//             method: "POST",
-//             headers: {
-//               "Content-Type": "application/json",
-//             },
-//             body: JSON.stringify({ number: 7 }),
-//           }
-//         );
-//         const apiData = await response.json();
-//         setData(apiData.profileset);
-//       } catch (error) {
-//         console.error("Error fetching data:", error);
-//         setData([]);
-//       }
-//     }
-
-//     fetchProfileSets();
-//   }, []);
-
-//   return (
-//     <div className="bigboxCG">
-//       <div className="headCG">{/* ... (button code remains the same) */}</div>
-//       <div className="folder-buttons">
-//         <ul className="leftlistCG">
-//           <li>
-//             <h3 id="boxTitleCG">Dataset Explorer</h3>
-//           </li>
-//         </ul>
-
-//         {/* rushabh logic for buttons search & all*/}
-//       </div>
-
-//       <div className="bodyCG">
-//         {data.map((folder) => (
-//           <IconButton
-//             aria-label="Folder"
-//             key={folder.id}
-//             onClick={() => handleFolderClick(folder.id)}
-//           >
-//             <FolderIcon style={{ fontSize: 48 }} />
-//             <span>{folder.name}</span>
-//           </IconButton>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Datalist;
-
-// // function Datalist() {
-// //   const handleButtonClick = (action) => {
-// //     switch (action) {
-// //       case "search":
-// //         alert("Search button clicked");
-// //         break;
-// //       case "folder":
-// //         alert("Folder button clicked");
-// //         break;
-// //       case "delete":
-// //         alert("Delete button clicked");
-// //         break;
-// //       case "download":
-// //         alert("Download button clicked");
-// //         break;
-// //       case "settings":
-// //         alert("Settings button clicked");
-// //

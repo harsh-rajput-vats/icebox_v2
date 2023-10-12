@@ -7,12 +7,11 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { TreeView } from "@mui/x-tree-view/TreeView";
 import { TreeItem } from "@mui/x-tree-view/TreeItem";
 
-function SSExplorer({ isImg, setIsImg, setValue }) {
+function SSExplorer({setIsImg, setValue }) {
   const button = () => {
     alert("YO");
   };
   const [data, setData] = useState([]);
-
   useEffect(() => {
     async function fetchData() {
       try {
