@@ -20,13 +20,8 @@ function Parent() {
   return (
 
 
-    
-    <div className="container">
 
-
-
-
-
+    <div className="container">git
       <div className="top">
         <div className="top-left">
           <Datalist profiles={setProfiles} profilename={setProfilename} setCount={setCount}/>
