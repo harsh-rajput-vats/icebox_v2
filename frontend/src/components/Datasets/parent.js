@@ -13,10 +13,7 @@ function Parent() {
 
   const [isImg, setIsImg] = useState(false);
   const [value, setValue] = useState(null);
-  const [profiles,setProfiles]=useState([]);
-  
-  const [profilename,setProfilename]=useState(null);
-  const [count,setCount] = useState(null);
+
   return (
 
 
@@ -24,15 +21,15 @@ function Parent() {
     <div className="container">git
       <div className="top">
         <div className="top-left">
-          <Datalist profiles={setProfiles} profilename={setProfilename} setCount={setCount}/>
+          <Datalist />
         </div>
         <div className="top-right">
-          <Graph profilename={profilename} count={count}/>
+          <Graph />
         </div>
       </div>
       <div className="bot">
         <div className="bot-left">
-          <SSExplorer setIsImg={setIsImg} setValue={setValue} profiles={profiles}/>
+          <SSExplorer setIsImg={setIsImg} setValue={setValue}/>
         </div>
         <div className="bot-right">
           <BR_PP isImg={isImg} value={value}/>
