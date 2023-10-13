@@ -18,7 +18,15 @@ function Parent() {
   const [profilename,setProfilename]=useState(null);
   const [count,setCount] = useState(null);
   return (
+
+
+    
     <div className="container">
+
+
+
+
+
       <div className="top">
         <div className="top-left">
           <Datalist profiles={setProfiles} profilename={setProfilename} setCount={setCount}/>
@@ -34,6 +42,8 @@ function Parent() {
         <div className="bot-right">
           <BR_PP isImg={isImg} value={value}/>
         </div>
+
+
       </div>
     </div>
   );
