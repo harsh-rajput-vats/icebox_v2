@@ -13,7 +13,7 @@ function Graph({profilename, count}) {
           </li>
         </ul>
       </div>
-      <div className="bodyCG">
+      <div className="bodyCG bodyDS">
         <div className="data-details">
           <h3>Name of Dataset: </h3>
           <h4>{profilename}</h4>
@@ -21,7 +21,7 @@ function Graph({profilename, count}) {
           <h4>{count}</h4>
         </div>
         <div>
-        <img className="chart-img" src={RadarChart} alt="Chart image" />
+          {profilename ? (<img className="chart-img" src={RadarChart} alt="Chart image" />) : <div></div> }
         </div>
       </div>
     </div>
