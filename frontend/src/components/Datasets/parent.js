@@ -1,5 +1,5 @@
 import React from "react";
-import "./Parent.css";
+import "./parent.css";
 import Datalist from "./TL_Datalist/Datalist";
 import Graph from "./TR_DetailsGraph/Graph";
 import SSExplorer from "./BL_SingleSet/SSExplorer";

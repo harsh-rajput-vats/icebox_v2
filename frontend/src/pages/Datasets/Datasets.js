@@ -1,6 +1,6 @@
 import React from "react";
 import "./Datasets.css";
-import Parent from "../../components/Datasets/Parent";
+import Parent from "../../components/Datasets/parent";
 
 function MainContent() {
   const proceedClick = () => {
